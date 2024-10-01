@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAC Dil Kursu - Telc Sınav Bilgilendirme Sayfası</title>
     <style>
+        /* Temel stil ve responsive yapı */
         * {
             margin: 0;
             padding: 0;
@@ -12,87 +13,96 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
             color: #333;
             line-height: 1.6;
             padding-bottom: 50px;
+            overflow-x: hidden;
         }
 
         header {
-            background-color: white; /* Üst tarafın rengi beyaz yapıldı */
-            color: #003366;
+            background-color: #ffffff;
             text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Üst kısma hafif gölge eklendi */
+            padding: 40px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         .logo img {
-            width: 150px;
+            width: 200px;
             height: auto;
             display: block;
             margin: 0 auto;
         }
 
         .telc-logo img {
-            width: 100px;
+            width: 80px;
             height: auto;
-            margin: 10px auto;
-            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
 
         h1 {
-            margin: 10px 0;
-            font-size: 24px;
+            font-size: 36px;
             color: #003366;
+            font-weight: bold;
+            margin-top: 20px;
         }
 
         main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 30px auto;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
 
         .announcement h2 {
             color: #003366;
+            font-size: 28px;
             text-align: center;
+            font-weight: bold;
             margin-bottom: 20px;
-            font-size: 22px;
         }
 
         .announcement h3 {
             color: #003366;
-            margin-top: 20px;
-            font-size: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 30px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
         }
 
         .announcement p {
-            margin: 10px 0;
-            font-size: 16px;
+            font-size: 18px;
+            margin: 20px 0;
+            line-height: 1.8;
+            color: #555;
         }
 
-        /* Dijital Sınav Kayıt Formu Butonu ve WP Butonu için stil */
         .important-button {
             display: block;
             width: 100%;
             background-color: #d9534f; /* Kırmızı renk */
             color: white;
             border: none;
-            padding: 12px;
+            padding: 16px;
             text-align: center;
-            margin: 15px 0;
-            font-size: 18px; /* Butonun fontu büyütüldü */
+            margin: 20px 0;
+            font-size: 18px;
             font-weight: bold;
             cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .important-button:hover {
             background-color: #c9302c; /* Hover efektinde daha koyu kırmızı */
+            transform: translateY(-2px); /* Butona hover efektiyle hafif yükselme ekleyelim */
         }
 
         button {
@@ -101,22 +111,24 @@
             background-color: #003366;
             color: white;
             border: none;
-            padding: 12px;
+            padding: 14px;
             text-align: center;
             margin: 15px 0;
             font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         button:hover {
             background-color: #002244;
+            transform: translateY(-2px); /* Hover efektiyle hafif yükselme ekleyelim */
         }
 
         footer {
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             background-color: #003366;
             color: white;
             position: relative;
@@ -124,41 +136,51 @@
             width: 100%;
         }
 
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
         .contact-info {
-            margin-top: 30px;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
         }
 
         .contact-info p {
-            font-size: 16px;
+            font-size: 18px;
             margin: 10px 0;
+            line-height: 1.6;
         }
 
         .contact-info a {
-            color: #003366;
+            color: #d9534f;
             text-decoration: none;
+            font-weight: bold;
         }
 
         /* Responsive design */
-        @media only screen and (max-width: 600px) {
-            body {
-                padding: 10px;
+        @media only screen and (max-width: 768px) {
+            main {
+                padding: 20px;
             }
-            h1 {
-                font-size: 20px;
-            }
+
             .announcement h2 {
+                font-size: 24px;
+            }
+
+            .announcement h3 {
                 font-size: 20px;
             }
-            .announcement h3 {
+
+            p, .important-button, button {
                 font-size: 16px;
-            }
-            button, .important-button {
-                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
+
     <header>
         <div class="logo">
             <img src="https://th.bing.com/th/id/OIP.33rnaX98P5XXV8CJKWcslgHaHa?rs=1&pid=ImgDetMain" alt="TAC Dil Kursu Logosu">
@@ -212,5 +234,6 @@
     <footer>
         <p>Tüm Hakları Saklıdır © 2024 TAC Dil Kursu</p>
     </footer>
+
 </body>
 </html>
