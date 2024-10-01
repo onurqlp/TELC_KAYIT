@@ -74,6 +74,27 @@
             font-size: 16px;
         }
 
+        /* Dijital Sınav Kayıt Formu Butonu ve WP Butonu için stil */
+        .important-button {
+            display: block;
+            width: 100%;
+            background-color: #d9534f; /* Kırmızı renk */
+            color: white;
+            border: none;
+            padding: 12px;
+            text-align: center;
+            margin: 15px 0;
+            font-size: 18px; /* Butonun fontu büyütüldü */
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .important-button:hover {
+            background-color: #c9302c; /* Hover efektinde daha koyu kırmızı */
+        }
+
         button {
             display: block;
             width: 100%;
@@ -131,7 +152,7 @@
             .announcement h3 {
                 font-size: 16px;
             }
-            button {
+            button, .important-button {
                 font-size: 14px;
             }
         }
@@ -154,7 +175,7 @@
             <h3>ÖNEMLİ DUYURU</h3>
             <p>Değerli Katılımcılar,</p>
             <h3>Dijital Sınav Kayıt Formu</h3>
-            <button onclick="window.open('https://forms.gle/cjsJkmcbwhisAna5A')">Dijital Sınav Kayıt Formu</button>
+            <button class="important-button" onclick="window.open('https://forms.gle/cjsJkmcbwhisAna5A')">Dijital Sınav Kayıt Formu</button>
             <p>Dijital sınav kaydı için lütfen formu eksiksiz doldurunuz. Formda dolduracağınız bilgiler sertifikanızda yer alacaktır. Bu sebeple dikkatli ve tüm karakterleri doğru doldurunuz. (Doğum Yeri bilgisi için lütfen pasaport veya e-devlet sisteminden kontrol ediniz.)</p>
             
             <p>Digital Telc sınavına hazırlık amacıyla aşağıdaki simülasyon videosunu izleyebilirsiniz:</p>
@@ -173,7 +194,7 @@
 
             <h3>Önemli Hatırlatma</h3>
             <p>Sınavın herhangi bir bölümünden geçmiş olan katılımcılar, tek bir bölümden sınava katılacaklarsa, geçtiklerine dair belgelerinin fotoğrafını aşağıdaki WhatsApp numarasına gönderebilirler.</p>
-            <button onclick="window.open('https://api.whatsapp.com/send?phone=+9053370626920&text=Katılacağım%20Telc%20sınavının%20bir%20bölümünden%20başarılı%20olduğumu%20gösteren%20belgeyi%20ekte%20gönderiyorum.%20ADINIZ%20,%20SINAV%20TARİHİ%20VE%20SEVİYESİ.')">Belge Gönder (WhatsApp)</button>
+            <button class="important-button" onclick="window.open('https://api.whatsapp.com/send?phone=+9053370626920&text=Katılacağım%20Telc%20sınavının%20bir%20bölümünden%20başarılı%20olduğumu%20gösteren%20belgeyi%20ekte%20gönderiyorum.%20ADINIZ%20,%20SINAV%20TARİHİ%20VE%20SEVİYESİ.')">Belge Gönder (WhatsApp)</button>
 
             <div class="contact-info">
                 <h3>Kurum İletişim Bilgileri</h3>
