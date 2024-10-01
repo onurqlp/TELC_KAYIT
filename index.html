@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAC Dil Kursu - Telc Sınav Bilgilendirme Sayfası</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .telc-logo img {
+            width: 100px;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .announcement h2 {
+            color: #003366;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .announcement h3 {
+            color: #003366;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .announcement p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 12px;
+            text-align: center;
+            margin: 15px 0;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #002244;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #003366;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #003366;
+            text-decoration: none;
+        }
+
+        /* Responsive design */
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .announcement h2 {
+                font-size: 20px;
+            }
+            .announcement h3 {
+                font-size: 16px;
+            }
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/mnt/data/image.png" alt="TAC Dil Kursu Logosu">
+        </div>
+        <h1>TAC DİL KURSU</h1>
+        <div class="telc-logo">
+            <img src="https://play-lh.googleusercontent.com/Cchh7uaidZ_ZXzjHv4waucPUix9rS7iDN2G7MN23JMeT-WMDUKWlD5lZdS35COntuak=w240-h480-rw" alt="Telc Logosu">
+        </div>
+    </header>
+
+    <main>
+        <section class="announcement">
+            <h2>TELC SINAV BİLGİLENDİRME SAYFASI</h2>
+            <h3>ÖNEMLİ DUYURU</h3>
+            <p>Değerli Katılımcılar,</p>
+            <h3>Dijital Sınav Kayıt Formu</h3>
+            <button onclick="window.open('https://forms.gle/cjsJkmcbwhisAna5A')">Dijital Sınav Kayıt Formu</button>
+            <p>Dijital sınav kaydı için lütfen formu eksiksiz doldurunuz. Formda dolduracağınız bilgiler sertifikanızda yer alacaktır. Bu sebeple dikkatli ve tüm karakterleri doğru doldurunuz. (Doğum Yeri bilgisi için lütfen pasaport veya e-devlet sisteminden kontrol ediniz.)</p>
+            
+            <p>Digital Telc sınavına hazırlık amacıyla aşağıdaki simülasyon videosunu izleyebilirsiniz:</p>
+            <button onclick="window.open('https://www.youtube.com/watch?v=FuLWdLeU_88&t=98s')">Simülasyon Videosunu İzle</button>
+            
+            <p>Sınav saat 10:00'da başlayacak olup, sözlü sınavınız 14:00'de gerçekleşecektir. Salona giriş zaman alacağı için lütfen 09:15'te 6. Kat kurum kantinimizde hazır bulununuz.</p>
+            
+            <h3>Konuşma Sınavı Videoları</h3>
+            <button onclick="window.open('https://youtube.com/playlist?list=PLlPnminIi7ZF5aBxG4UZZ5I7wg9yh06S2&si=0lpHahiI-1K_ICVC')">Konuşma Sınavı Videolarını İzle</button>
+            
+            <h3>Genel Sınav Formatı</h3>
+            <p>Aşağıdaki linklerden örnek sınav indirip sınavın bölümleri hakkında bilgi alabilirsiniz:</p>
+            <button onclick="window.open('https://www.telc.net/fileadmin/user_upload/mock_exams/Deutsch/telc_deutsch_b1.zip')">Örnek B1 Sınavı</button>
+            <button onclick="window.open('https://www.telc.net/fileadmin/user_upload/mock_exams/Deutsch/telc_deutsch_b2.zip')">Örnek B2 Sınavı</button>
+            <button onclick="window.open('https://www.telc.net/fileadmin/user_upload/mock_exams/Deutsch/telc_deutsch_a2.zip')">Örnek A2 Sınavı</button>
+
+            <h3>Önemli Hatırlatma</h3>
+            <p>Sınavın herhangi bir bölümünden geçmiş olan katılımcılar, tek bir bölümden sınava katılacaklarsa, geçtiklerine dair belgelerinin fotoğrafını aşağıdaki WhatsApp numarasına gönderebilirler.</p>
+            <button onclick="window.open('https://api.whatsapp.com/send?phone=+9053370626920&text=Katılacağım%20Telc%20sınavının%20bir%20bölümünden%20başarılı%20olduğumu%20gösteren%20belgeyi%20ekte%20gönderiyorum.%20ADINIZ%20,%20SINAV%20TARİHİ%20VE%20SEVİYESİ.')">Belge Gönder (WhatsApp)</button>
+
+            <div class="contact-info">
+                <h3>Kurum İletişim Bilgileri</h3>
+                <p><strong>Adres:</strong> Meşrutiyet Cad. No:1 Koray İş Merkezi, 6., 7. ve 8. Kat No:11-12-13-14-15-16, Çankaya / Ankara</p>
+                <p><strong>E-posta:</strong> <a href="mailto:info@kizilaytacdil.com">info@kizilaytacdil.com</a></p>
+                <p><strong>Telefon:</strong> 
+                    <br>0850 227 02 45 
+                    <br>0536 064 82 21 
+                    <br>0536 771 79 96
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tüm Hakları Saklıdır © 2024 TAC Dil Kursu</p>
+    </footer>
+</body>
+</html>
