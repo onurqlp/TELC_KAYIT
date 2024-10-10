@@ -24,7 +24,7 @@
         header {
             background-color: #ffffff;
             text-align: center;
-            padding: 20px 0; /* Üst bilgiyi daha kısa yaptık */
+            padding: 20px 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             position: relative;
         }
@@ -49,6 +49,27 @@
             color: #003366;
             font-weight: bold;
             margin-top: 10px;
+        }
+
+        /* Katılımcı Kodu Butonu */
+        .menu-button {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .menu-button:hover {
+            background-color: #002244;
+            transform: translateY(-2px);
         }
 
         main {
@@ -87,7 +108,7 @@
         .important-button {
             display: block;
             width: 100%;
-            background-color: #d9534f; /* Kırmızı renk */
+            background-color: #d9534f;
             color: white;
             border: none;
             padding: 16px;
@@ -101,8 +122,8 @@
         }
 
         .important-button:hover {
-            background-color: #c9302c; /* Hover efektinde daha koyu kırmızı */
-            transform: translateY(-2px); /* Butona hover efektiyle hafif yükselme ekleyelim */
+            background-color: #c9302c;
+            transform: translateY(-2px);
         }
 
         button {
@@ -118,12 +139,12 @@
             font-weight: bold;
             cursor: pointer;
             border-radius: 6px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: background-color 0.3s ease, transform: translateY(-2px);
         }
 
         button:hover {
             background-color: #002244;
-            transform: translateY(-2px); /* Hover efektiyle hafif yükselme ekleyelim */
+            transform: translateY(-2px);
         }
 
         footer {
@@ -186,10 +207,10 @@
             <img src="https://th.bing.com/th/id/OIP.33rnaX98P5XXV8CJKWcslgHaHa?rs=1&pid=ImgDetMain" alt="TAC Dil Kursu Logosu">
         </div>
         <h1>TAC DİL KURSU</h1>
-        <div class="telc-logo">
-            <img src="https://play-lh.googleusercontent.com/Cchh7uaidZ_ZXzjHv4waucPUix9rS7iDN2G7MN23JMeT-WMDUKWlD5lZdS35COntuak=w240-h480-rw" alt="Telc Logosu">
-        </div>
     </header>
+
+    <!-- Katılımcı Kodu Butonu -->
+    <button class="menu-button" onclick="window.location.href='yorum_sayfasi.html'">Katılımcı Kodu Edinme</button>
 
     <main>
         <section class="announcement">
