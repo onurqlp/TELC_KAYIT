@@ -199,6 +199,22 @@
             }
         }
     </style>
+
+    <!-- Sınav Tarihi Sorma Script'i -->
+    <script>
+        function showExamDatePrompt() {
+            // Kullanıcıya sınav tarihini soran bir prompt açılır
+            var examDate = prompt("Katıldığınız Sınav Tarihini Giriniz (GG/AA/YYYY):");
+
+            // Eğer kullanıcı bir tarih girdiyse, işlem yapılır
+            if (examDate) {
+                alert("Girdiğiniz Sınav Tarihi: " + examDate);  // Şu an için sadece alert ile gösteriyoruz
+                window.location.href = 'kod.html';  // Yönlendirme yapılır
+            } else {
+                alert("Lütfen geçerli bir sınav tarihi giriniz.");
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -210,7 +226,7 @@
     </header>
 
     <!-- Katılımcı Kodu Butonu -->
-    <button class="menu-button" onclick="window.location.href='kod.html'">Katılımcı Kodu Edinme</button>
+    <button class="menu-button" onclick="showExamDatePrompt()">Katılımcı Kodu Edinme</button>
 
     <main>
         <section class="announcement">
