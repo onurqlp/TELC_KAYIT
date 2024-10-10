@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yorum yaparak tecrübenizi paylaşın ve sınav için katılımcı kodunuzu alın. TAC Dil Kursu, kaliteli eğitim ve sınav hazırlığıyla fark yaratıyor.">
+    <title>Yorum Yap ve Katılım Kodu Al</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            iframe {
+                height: 300px;
+            }
+
+            .button {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+    <script>
+        function showPasswordInput() {
+            document.getElementById("passwordSection").classList.remove("hidden");
+        }
+
+        function generateRandomCode() {
+            var dob = document.getElementById("dob").value;
+            
+            if (dob) {
+                // Random 6-digit code generation
+                var randomCode = Math.floor(100000 + Math.random() * 900000);
+                document.getElementById("result").innerText = "Katılımcı Kodu: " + randomCode;
+                document.getElementById("result").classList.remove("hidden");
+            } else {
+                alert("Lütfen doğum tarihini giriniz.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>TAC Dil Kursu Yorum ve Katılım Kodu</h1>
+</header>
+
+<main>
+    <h2>Yorum yaparak tecrübenizi paylaşın!</h2>
+    <p>Sınav tecrübeniz bizim için çok değerli. Lütfen Google işletme sayfamızda yorum yaparak bize destek olun. Yorumunuzu paylaştıktan sonra katılım kodunuzu alabilirsiniz.</p>
+
+    <iframe src=" https://kizilaytacdil.com/yorumlar" ></iframe>
+
+    <button class="button" onclick="showPasswordInput()">Yorumu Gönder ve Kodu Al</button>
+
+    <div id="passwordSection" class="hidden">
+        <h3>Doğum Tarihinizi Girin</h3>
+        <input type="date" id="dob" name="dob" placeholder="GG/AA/YYYY">
+        <button class="button" onclick="generateRandomCode()">Kodu Al</button>
+    </div>
+
+    <div id="result" class="hidden">
+        <!-- Katılımcı Kodu buraya gelecek -->
+    </div>
+</main>
+
+</body>
+</html>
